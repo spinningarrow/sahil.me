@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sahil Bajaj</title>
+		<style>
+			body {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				margin: 0 auto;
+				padding: 2em 1em;
+				width: 920px;
+			}
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			ul li {
+				display: inline-block;
+				opacity: 0.9;
+				transition: opacity 0.2s ease-in;
+			}
+
+			ul li:hover {
+				opacity: 1;
+			}
+
+			ul li a {
+				background: #eee;
+				color: #fff;
+				display: block;
+				height: 500px;
+				position: relative;
+				text-decoration: none;
+				width: 300px;
+
+			}
+
+			a span {
+				bottom: 0.5em;
+				font-size: 2em;
+				font-weight: bold;
+				left: 0.5em;
+				position: absolute;
+				text-shadow: 1px 1px 3px #444;
+			}
+
+			a[href*="blog"] {
+				background: url(https://lh5.googleusercontent.com/-XCGZYwvkK_Q/Ufb_DnckbRI/AAAAAAAAAts/hkV9tYWEQFQ/s800/keyboard_and_pencil.jpg) -390px 0;
+			}
+
+			a[href*="github"] {
+				background: url(https://lh4.googleusercontent.com/-qQzee8uJ27c/UjylA7Kwj2I/AAAAAAAAAwY/7Weo29n0aMc/s512/coding_iterm_sublimetext.png);
+			}
+
+			a[href*="flickr"] {
+				background: url(http://farm8.staticflickr.com/7220/7250847350_d4d69df0ba_c.jpg) -360px 0;
+			}
+
+			@media (max-width: 959px) {
+				ul li {
+					display: block;
+				}
+
+				ul li a {
+					height: 100px;
+					margin-bottom: 1em;
+					width: 400px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Sahil Bajaj</h1>
+
+		<ul>
+			<li>
+				<a href="http://blog.sahil.me/">
+					<span>Blog</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/spinningarrow/"><span>Github</span></a>
+			</li>
+			<li>
+				<a href="http://www.flickr.com/photos/spinning-arrow/"><span>Flickr</span></a>
+			</li>
+		</ul>
+	</body>
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1834887-3']);
+		_gaq.push(['_setDomainName', 'sahil.me']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</html>
