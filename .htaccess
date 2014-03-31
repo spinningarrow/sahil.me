@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^blog\/about\.html$ /blog/about/ [R=301,L]
+RewriteRule ^blog\/archives\.html$ /blog/archives/ [R=301,L]
+RewriteRule ^blog\/links\.html$ /blog/links/ [R=301,L]
+
+RewriteRule ^blog(\/(.*))?$ http://blog.sahil.me/$2 [R=301,L]
