@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /adminer.php
+Disallow: /blog.old
