@@ -1,4 +1,4 @@
-html { 
+html {
 	background: url(sahil-bajaj-gray-bg.jpg) no-repeat center right fixed;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -42,4 +42,12 @@ nav ul {
 
 nav li {
     padding: 0.5em 0;
+}
+
+.photo-credits {
+    font-size: 0.5em;
+    bottom: 0;
+    position: fixed;
+    right: 1em;
+    text-transform: uppercase;
 }
