@@ -19,7 +19,7 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="photo-credits">
+		<div class="photo-credits hidden">
 			<p>Photo by <span class="name">Qin Gemeng</span></p>
 		</div>
 	</body>
@@ -35,5 +35,15 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+	</script>
+
+	<script>
+		var credits = ['Qin Gemeng', 'Gemeng Qin'];
+		var randomIndex = Math.floor(Math.random() * credits.length);
+
+		window.onload = function () {
+			document.querySelectorAll('.photo-credits .name')[0].innerHTML = credits[randomIndex];
+			document.querySelectorAll('.photo-credits')[0].classList.remove('hidden');
+		}
 	</script>
 </html>
