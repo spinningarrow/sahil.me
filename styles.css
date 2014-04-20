@@ -13,6 +13,7 @@ body {
 	display: flex;
 	height: 100%;
     margin-left: 6em;
+    min-height: 400px;
     width: 30em;
 }
 
