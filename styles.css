@@ -11,8 +11,16 @@ html {
 }
 
 body {
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
 	display: flex;
+
 	height: 95%;
 	margin-left: 6em;
 	min-height: 400px;
