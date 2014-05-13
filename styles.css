@@ -1,5 +1,5 @@
 html {
-	background: url(sahil-bajaj-gray-bg.jpg) no-repeat center right fixed;
+	background: url(sahil-bajaj-gray-bg.jpg) #fff no-repeat center right fixed;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -8,6 +8,7 @@ html {
 	font-family: 'PT Sans Caption', pt-sans-caption, 'Museo Sans', sans-serif;
 	font-size: 1.2em;
 	height: 100%;
+	overflow: hidden;
 }
 
 body {
