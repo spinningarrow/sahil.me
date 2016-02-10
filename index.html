@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Sahil Bajaj</title>
 
@@ -12,32 +12,6 @@
 				font-family: 'lato', sans-serif;
 				line-height: 1.4;
 				margin: 2em;
-				max-width: 1400px;
-			}
-
-			.content {
-				display: -webkit-flex;
-				display: flex;
-				-webkit-flex-wrap: wrap;
-				flex-wrap: wrap;
-			}
-
-			aside {
-				flex-basis: 35%;
-			}
-
-			main {
-				flex-basis: 33%;
-				margin-right: 2em;
-				min-width: 310px;
-			}
-
-			main p:first-child {
-				margin-top: 0;
-			}
-
-			main a {
-				color: #6277F0;
 			}
 
 			h1 {
@@ -45,12 +19,14 @@
 				text-transform: lowercase;
 			}
 
+			.content {
+				display: flex;
+			}
+
 			ul {
-				flex-basis: 15%;
+				flex-shrink: 0;
 				list-style: none;
-				margin: 0 0 2em;
-				min-width: 150px;
-				order: -1;
+				margin: 0 2em 2em 0;
 				padding: 0;
 			}
 
@@ -67,8 +43,54 @@
 				color: #83B167;
 			}
 
+			main {
+				display: flex;
+				justify-content: space-between;
+				margin-right: 2em;
+			}
+
+			section {
+				flex-basis: 48%;
+			}
+
+			section p:first-child {
+				margin-top: 0;
+			}
+
+			section a {
+				color: #6277F0;
+			}
+
+			aside {
+				flex-basis: 48%;
+			}
+
 			img {
-				width: 300px;
+				max-width: 100%;
+			}
+
+			@media all and (max-width: 800px) {
+				main {
+					flex-direction: column;
+				}
+
+				section, aside {
+					flex-basis: auto;
+				}
+			}
+
+			@media all and (max-width: 550px) {
+				body {
+					margin: 1em;
+				}
+
+				.content {
+					flex-direction: column;
+				}
+
+				aside, section, ul {
+					flex-basis: auto;
+				}
 			}
 		</style>
 	</head>
@@ -78,24 +100,6 @@
 		<h1>Sahil Bajaj</h1>
 
 		<div class="content">
-			<main>
-				<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
-				programming computers for fun (and eventual profit).</p>
-
-				<p>I also enjoy reading books, playing the guitar, writing,
-				travelling, photography, ruminating, and trying my hand at new
-				things (or leg, if the new thing is skiing).</p>
-
-				<p>A list of my favourite things would be incomplete without
-				JRR Tolkien, The Matrix, Iron Maiden, Chuck, chocolate chip
-				ice-cream, and the serial comma.</p>
-
-				<p>
-					I can be contacted at <a
-					href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;</a>.
-				</p>
-			</main>
-
 			<ul>
 				<li>
 					<a href="http://blog.sahil.me">Blog</a>
@@ -111,9 +115,29 @@
 				</li>
 			</ul>
 
-			<aside>
-				<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj" title="Photo by Gemeng Qin">
-			</aside>
+			<main>
+				<section>
+					<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
+					programming computers for fun (and eventual profit).</p>
+
+					<p>I also enjoy reading books, playing the guitar, writing,
+					travelling, photography, ruminating, and trying my hand at new
+					things (or leg, if the new thing is skiing).</p>
+
+					<p>A list of my favourite things would be incomplete without
+					JRR Tolkien, The Matrix, Iron Maiden, Chuck, chocolate chip
+					ice-cream, and the serial comma.</p>
+
+					<p>
+						I can be contacted at <a
+						href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;</a>.
+					</p>
+				</section>
+
+				<aside>
+					<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj" title="Photo by Gemeng Qin">
+				</aside>
+			</main>
 		</div>
 
 		<script type="text/javascript">
