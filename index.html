@@ -2,58 +2,158 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Sahil Bajaj — Home</title>
-		<link rel="stylesheet" href="styles.css">
-		<script src="//use.edgefonts.net/antic.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Sahil Bajaj</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,900'
+			rel='stylesheet' type='text/css'>
+
+		<style>
+			body {
+				background: #f9f8fa;
+				font-family: 'lato', sans-serif;
+				line-height: 1.4;
+				margin: 2em;
+			}
+
+			h1 {
+				font-weight: 100;
+				text-transform: lowercase;
+			}
+
+			.content {
+				display: flex;
+			}
+
+			ul {
+				flex-shrink: 0;
+				list-style: none;
+				margin: 0 2em 2em 0;
+				padding: 0;
+			}
+
+			ul a {
+				color: #c0c0c0;
+				font-size: 1.5em;
+				font-weight: 900;
+				text-decoration: none;
+				text-transform: lowercase;
+				transition: color 0.15s;
+			}
+
+			ul a:hover {
+				color: #83B167;
+			}
+
+			main {
+				display: flex;
+				justify-content: space-between;
+				margin-right: 2em;
+			}
+
+			section {
+				flex-basis: 48%;
+			}
+
+			section p:first-child {
+				margin-top: 0;
+			}
+
+			section a {
+				color: #6277F0;
+			}
+
+			aside {
+				flex-basis: 48%;
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			@media all and (max-width: 800px) {
+				main {
+					flex-direction: column;
+				}
+
+				section, aside {
+					flex-basis: auto;
+				}
+			}
+
+			@media all and (max-width: 550px) {
+				body {
+					margin: 1em;
+				}
+
+				.content {
+					flex-direction: column;
+				}
+
+				aside, section, ul {
+					flex-basis: auto;
+				}
+			}
+		</style>
 	</head>
 
 	<body>
-		<div>
-			<h1>Hi! I'm Sahil.</h1>
 
-			<p>I can currently be found in sunny Singapore, building web
-			applications. I studied Computer Science and Linguistics at
-			NTU, and also spent half of 2013 in Trondheim (a beautiful city
-			in actually-not-that-cold Norway), revelling in the life of an
-			exchange student.</p>
+		<h1>Sahil Bajaj</h1>
 
-			<p>I love books, the guitar, writing, the web, technology, and
-			photography.</p>
+		<div class="content">
+			<ul>
+				<li>
+					<a href="http://blog.sahil.me">Blog</a>
+				</li>
+				<li>
+					<a href="http://photos.sahil.me">Photography</a>
+				</li>
+				<li>
+					<a href="https://github.com/spinningarrow">GitHub</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/spinningarrow_">Twitter</a>
+				</li>
+			</ul>
 
-			<nav>
-				<ul>
-					<li><a href="http://blog.sahil.me">Blog</a></li>
-					<li><a href="https://github.com/spinningarrow/">Code</a></li>
-					<li><a href="http://photos.sahil.me">Photography</a></li>
-				</ul>
-			</nav>
+			<main>
+				<section>
+					<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
+					programming computers for fun (and eventual profit).</p>
+
+					<p>I also enjoy reading books, playing the guitar, writing,
+					travelling, photography, ruminating, and trying my hand at new
+					things (or leg, if the new thing is skiing).</p>
+
+					<p>A list of my favourite things would be incomplete without
+					JRR Tolkien, The Matrix, Iron Maiden, Chuck, chocolate chip
+					ice-cream, and the serial comma.</p>
+
+					<p>
+						I can be contacted at <a
+						href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;</a>.
+					</p>
+				</section>
+
+				<aside>
+					<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj" title="Photo by Gemeng Qin">
+				</aside>
+			</main>
 		</div>
 
-		<div class="photo-credits hidden">
-			<p>Photo by <span class="name">Qin Gemeng</span></p>
-		</div>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-1834887-3']);
+			_gaq.push(['_setDomainName', 'sahil.me']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</body>
-
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-1834887-3']);
-		_gaq.push(['_setDomainName', 'sahil.me']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-
-	<script>
-		var credits = ['Qin Gemeng', 'Gemeng Qin'];
-		var randomIndex = Math.floor(Math.random() * credits.length);
-
-		window.onload = function () {
-			document.querySelectorAll('.photo-credits .name')[0].innerHTML = credits[randomIndex];
-			document.querySelectorAll('.photo-credits')[0].classList.remove('hidden');
-		}
-	</script>
 </html>
