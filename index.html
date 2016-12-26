@@ -1,159 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<meta charset="UTF-8">
 		<title>Sahil Bajaj</title>
 
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,900'
-			rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
 		<style>
 			body {
-				background: #f9f8fa;
-				font-family: 'lato', sans-serif;
-				line-height: 1.4;
-				margin: 2em;
-			}
-
-			h1 {
-				font-weight: 100;
-				text-transform: lowercase;
-			}
-
-			.content {
-				display: flex;
-			}
-
-			ul {
-				flex-shrink: 0;
-				list-style: none;
-				margin: 0 2em 2em 0;
-				padding: 0;
-			}
-
-			ul a {
-				color: #c0c0c0;
-				font-size: 1.5em;
-				font-weight: 900;
-				text-decoration: none;
-				text-transform: lowercase;
-				transition: color 0.15s;
-			}
-
-			ul a:hover {
-				color: #83B167;
-			}
-
-			main {
-				display: flex;
-				justify-content: space-between;
-				margin-right: 2em;
-			}
-
-			section {
-				flex-basis: 48%;
-			}
-
-			section p:first-child {
-				margin-top: 0;
-			}
-
-			section a {
-				color: #6277F0;
-			}
-
-			aside {
-				flex-basis: 48%;
+				color: #444;
+				font-family: league spartan, sans-serif;
+				font-size: 1.3em;
+				margin: 0 auto;
+				max-width: 700px;
+				padding: 1em 2em;
+				text-align: center;
 			}
 
 			img {
-				max-width: 100%;
+				width: 50%;
+				border-radius: 100%;
 			}
 
-			@media all and (max-width: 800px) {
-				main {
-					flex-direction: column;
-				}
-
-				section, aside {
-					flex-basis: auto;
-				}
+			a {
+				text-decoration: none;
+				border-bottom: 4px solid;
+				color: #49708A;
+				border-color: #D0E0EB
 			}
 
-			@media all and (max-width: 550px) {
-				body {
-					margin: 1em;
-				}
+			h1 {
+				font-family: abril fatface, serif;
+				font-weight: normal;
+				font-size: 48px;
+				margin: 1em 0;
+			}
 
-				.content {
-					flex-direction: column;
-				}
+			ul {
+				border: 0;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				text-indent: 0;
+				margin-bottom: 3em;
+			}
 
-				aside, section, ul {
-					flex-basis: auto;
-				}
+			ul li {
+				display: inline-block;
+				margin: 0 0.25em;
+			}
+
+			ul li:nth-child(1) a {
+				border-color: #C7E2C3;
+			}
+
+			ul li:nth-child(2) a {
+				border-color: #F8F4C7;
+			}
+
+			ul li:nth-child(3) a {
+				border-color: #E3D0A6;
+			}
+
+			ul li:nth-child(4) a {
+				border-color: #FFF560;
+			}
+
+			ul li:nth-child(5) a {
+				border-color: #2EE0AE;
 			}
 		</style>
 	</head>
-
 	<body>
-
 		<h1>Sahil Bajaj</h1>
 
-		<div class="content">
-			<ul>
-				<li>
-					<a href="http://blog.sahil.me">Blog</a>
-				</li>
-				<li>
-					<a href="http://photos.sahil.me">Photography</a>
-				</li>
-				<li>
-					<a href="https://github.com/spinningarrow">GitHub</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/spinningarrow_">Twitter</a>
-				</li>
-			</ul>
+		<ul>
+			<li>
+				<a href="//blog.sahil.me">Blog</a>
+			</li>
+			<li>
+				<a href="//photos.sahil.me">Photography</a>
+			</li>
+		</ul>
 
-			<main>
-				<section>
-					<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
-					programming computers for fun (and eventual profit).</p>
+		<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj">
 
-					<p>I also enjoy reading books, playing the guitar, writing,
-					travelling, photography, ruminating, and trying my hand at new
-					things (or leg, if the new thing is skiing).</p>
+		<div>
+			<p>Hi, I’m Sahil.</p>
 
-					<p>A list of my favourite things would be incomplete without
-					JRR Tolkien, The Matrix, Iron Maiden, Chuck, chocolate chip
-					ice-cream, and the serial comma.</p>
+			<p>I do stuff.</p>
 
-					<p>
-						I can be contacted at <a
-						href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#097;&#104;&#105;&#108;&#046;&#109;&#101;</a>.
-					</p>
-				</section>
-
-				<aside>
-					<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj" title="Photo by Gemeng Qin">
-				</aside>
-			</main>
+			<p>I can be contacted at <a href="#">hello@sahil.me</a>.</p>
 		</div>
 
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-1834887-3']);
-			_gaq.push(['_setDomainName', 'sahil.me']);
-			_gaq.push(['_trackPageview']);
+		<ul class="social-links">
+			<li>
+				<a href="//blog.sahil.me">GitHub</a>
+			</li>
+			<li>
+				<a href="//photos.sahil.me">Twitter</a>
+			</li>
+			<li>
+				<a href="//photos.sahil.me">Instagram</a>
+			</li>
+			<li>
+				<a href="//photos.sahil.me">500px</a>
+			</li>
+		</ul>
 
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
 	</body>
 </html>
