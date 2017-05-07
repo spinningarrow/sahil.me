@@ -4,109 +4,112 @@
 		<meta charset="UTF-8">
 		<title>Sahil Bajaj</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700" rel="stylesheet">
 
 		<style>
-			body {
-				color: #444;
-				font-family: league spartan, sans-serif;
-				font-size: 1.3em;
-				margin: 0 auto;
-				max-width: 700px;
-				padding: 1em 2em;
-				text-align: center;
-			}
+		body {
+			font-family: source serif pro, serif;
+			font-size: 1.4em;
+			line-height: 1.4;
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 0 1em;
+		}
 
-			img {
-				width: 50%;
-				border-radius: 100%;
-			}
+		aside, main {
+			display: inline-block;
+			max-width: 45%;
+		}
 
-			a {
-				text-decoration: none;
-				border-bottom: 4px solid;
-				color: #49708A;
-				border-color: #D0E0EB
-			}
+		aside {
+			margin-left: 2em;
+			vertical-align: top;
+		}
 
-			h1 {
-				font-family: abril fatface, serif;
-				font-weight: normal;
-				font-size: 48px;
-				margin: 1em 0;
-			}
+		aside ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 
-			ul {
-				border: 0;
-				list-style: none;
-				padding: 0;
-				margin: 0;
-				text-indent: 0;
-				margin-bottom: 3em;
-			}
+		aside h2 {
+			font-family: 'source sans pro', sans-serif;
+			font-size: 0.8em;
+			margin: 2em 0.5em 0.5em;
+			text-transform: uppercase;
+		}
 
-			ul li {
-				display: inline-block;
-				margin: 0 0.25em;
-			}
+		aside h2:nth-of-type(1) {
+			margin-top: 0;
+		}
 
-			ul li:nth-child(1) a {
-				border-color: #C7E2C3;
-			}
+		main img {
+			max-width: 100%;
+		}
 
-			ul li:nth-child(2) a {
-				border-color: #F8F4C7;
-			}
+		figure {
+			margin: 0;
+		}
 
-			ul li:nth-child(3) a {
-				border-color: #E3D0A6;
-			}
+		figcaption {
+			font-family: 'source sans pro', sans-serif;
+			font-size: 0.5em;
+			text-align: right;
+			text-transform: uppercase;
+		}
 
-			ul li:nth-child(4) a {
-				border-color: #FFF560;
-			}
-
-			ul li:nth-child(5) a {
-				border-color: #2EE0AE;
-			}
+		a {
+			border-bottom: 1px solid gold;
+			color: hsl(210, 50%, 50%);
+			display: inline-block;
+			margin: 0.5em;
+			text-decoration: none;
+		}
 		</style>
 	</head>
 	<body>
 		<h1>Sahil Bajaj</h1>
 
-		<ul>
-			<li>
-				<a href="//blog.sahil.me">Blog</a>
-			</li>
-			<li>
-				<a href="//photos.sahil.me">Photography</a>
-			</li>
-		</ul>
+		<main>
+			<figure>
+				<img src="sahil-bajaj-harbin.jpg" alt="Sahil Bajaj">
+				<figcaption>Photo by Gemeng Qin</figcaption>
+			</figure>
 
-		<img src="sahil-bajaj-japan.jpg" alt="Sahil Bajaj">
+			<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
+			programming computers for fun (and eventual profit).</p>
 
-		<div>
-			<p>Hi, I’m Sahil.</p>
+			<p>I also enjoy reading books, playing the guitar, writing,
+			travelling, photography, ruminating, and trying my hand at new
+			things (or leg, if the new thing is skiing).</p>
+		</main>
 
-			<p>I do stuff.</p>
+		<aside>
+			<h2>Work</h2>
+			<ul>
+				<li>
+					<a href="//blog.sahil.me">Blog</a>
+				</li>
+				<li>
+					<a href="//photos.sahil.me">Photography</a>
+				</li>
+			</ul>
 
-			<p>I can be contacted at <a href="#">hello@sahil.me</a>.</p>
-		</div>
+			<h2>Contact</h2>
+			<a href="mailto:hello@sahil.me">Email</a>
+		</aside>
 
-		<ul class="social-links">
-			<li>
-				<a href="//blog.sahil.me">GitHub</a>
-			</li>
-			<li>
-				<a href="//photos.sahil.me">Twitter</a>
-			</li>
-			<li>
-				<a href="//photos.sahil.me">Instagram</a>
-			</li>
-			<li>
-				<a href="//photos.sahil.me">500px</a>
-			</li>
-		</ul>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-1834887-3']);
+			_gaq.push(['_setDomainName', 'sahil.me']);
+			_gaq.push(['_trackPageview']);
 
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</body>
 </html>
