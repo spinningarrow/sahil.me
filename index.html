@@ -10,7 +10,8 @@
 
 		<style>
 		body {
-			font-family: source serif pro, serif;
+			color: #444;
+			font-family: source sans pro, sans-serif;
 			font-size: 1.4em;
 			line-height: 1.4;
 			margin: 1em auto;
@@ -18,13 +19,26 @@
 			padding: 0 1em;
 		}
 
+		h1 {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+		}
+
 		aside, main {
 			display: inline-block;
-			max-width: 45%;
+		}
+
+		main {
+			width: 50%;
 		}
 
 		aside {
-			margin-left: 2em;
+			max-width: 40%;
+		}
+
+		aside {
+			font-size: 1rem;
+			margin-left: 2rem;
 			vertical-align: top;
 		}
 
@@ -36,7 +50,7 @@
 
 		aside h2 {
 			font-family: 'source sans pro', sans-serif;
-			font-size: 0.8em;
+			font-size: 1rem;
 			margin: 2em 0 0.5em;
 			text-transform: uppercase;
 		}
@@ -45,33 +59,61 @@
 			margin-top: 0;
 		}
 
-		main img {
-			max-width: 100%;
+		aside section {
+			clear: both;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		aside section:nth-of-type(1) {
+			margin-right: 3rem;
 		}
 
 		figure {
-			margin: 0;
+			margin: 0 0 1rem 0;
+		}
+
+		figure img {
+			display: block;
+			max-width: 100%;
 		}
 
 		figcaption {
-			font-family: 'source sans pro', sans-serif;
-			font-size: 0.5em;
-			text-align: right;
+			background-color: white;
+			float: right;
+			font-size: 0.7rem;
+			line-height: 0.7rem;
+			margin-top: -2rem;
+			opacity: 0;
+			padding: 0 0.5rem;
 			text-transform: uppercase;
+			transition: opacity 0.1s;
+		}
+
+		figure:hover figcaption {
+			opacity: 0.9;
+		}
+
+		p {
+			margin-top: 0;
 		}
 
 		a {
 			border-bottom: 1px solid gold;
 			color: hsl(210, 50%, 50%);
+			text-decoration: none;
+		}
+
+		aside a {
 			display: inline-block;
 			margin: 0.5em 0;
-			text-decoration: none;
 		}
 
 		@media(max-width: 640px) {
 			aside, main {
 				display: block;
 				max-width: none;
+				width: auto;
 			}
 
 			aside {
@@ -84,33 +126,56 @@
 		<h1>Sahil Bajaj</h1>
 
 		<main>
+			<p>I'm a programmer who lives on the sunny/rainy island of Singapore. I currently work at
+			<a href="https://www.thoughtworks.com/">ThoughtWorks</a> and
+			also co-organise the local <a href="https://www.meetup.com/Grumpy-Gits-SG/">Git</a> and <a href="https://www.meetup.com/Hack-Tell-Singapore/">Hack && Tell</a>
+			meetups.</p>
+
+			<p>I grew up in Delhi and moved to Singapore in 2010. While in university, I lived
+			in Norway for a semester — I still haven't gotten
+			over it.</p>
+
+			<p>I love languages, mountains, books, cameras, and table tennis;
+			most posts on <a href="//blog.sahil.me">my blog</a> are a reflection of this.</p>
+
+			<p>Besides my longstanding interest in technology, I also find
+			linguistics, typography, and people highly interesting.</p> </main>
+		<aside>
 			<figure>
 				<img src="sahil-bajaj-harbin.jpg" alt="Sahil Bajaj">
 				<figcaption>Photo by <a
 				href="http://gemengq.me/portfolio/">Gemeng Qin</a></figcaption>
 			</figure>
 
-			<p>Hi, I’m Sahil. I live on the rainy island of Singapore,
-			programming computers for work and play.</p>
+			<section>
+				<h2>Elsewhere</h2>
+				<ul>
+					<li>
+						<a href="//blog.sahil.me">Blog</a>
+					</li>
+					<li>
+						<a href="//photos.sahil.me">Photography</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/spinningarrow_">Instagram</a>
+					</li>
+					<li>
+						<a href="https://github.com/spinningarrow">GitHub</a>
+					</li>
+				</ul>
+			</section>
 
-			<p>I enjoy reading books, playing the guitar, writing, travelling,
-			photography, ruminating, and trying my hand at new things (or leg,
-			if the new thing is skiing).</p>
-		</main>
-
-		<aside>
-			<h2>Work</h2>
-			<ul>
-				<li>
-					<a href="//blog.sahil.me">Blog</a>
-				</li>
-				<li>
-					<a href="//photos.sahil.me">Photography</a>
-				</li>
-			</ul>
-
-			<h2>Contact</h2>
-			<a href="mailto:hello@sahil.me">Email</a>
+			<section>
+				<h2>Information</h2>
+				<ul>
+					<li>
+						<a href="/resume">Resume</a>
+					</li>
+					<li>
+						<a href="mailto:hello@sahil.me">Email</a>
+					</li>
+				</ul>
+			</section>
 		</aside>
 
 		<script type="text/javascript">
