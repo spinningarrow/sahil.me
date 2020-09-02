@@ -11,7 +11,7 @@
 		body {
 			color: #444;
 			font-family: helvetica neue, helvetica, arial, sans-serif;
-			font-size: 1.0em;
+			font-size: 2.0em;
 			line-height: 1.6;
 			margin: 1em auto;
 			max-width: 900px;
@@ -19,52 +19,29 @@
 		}
 
 		h1 {
-			font-family: times, serif;
-			font-size: 2.2rem;
+			display: none;
 		}
 
 		aside, main {
 			display: inline-block;
+			vertical-align: top;
 		}
 
 		main {
-			width: 50%;
-		}
-
-		aside {
-			max-width: 40%;
+			width: 62%;
 		}
 
 		aside {
 			font-size: 1rem;
-			margin-left: 2rem;
-			vertical-align: top;
+			max-width: 35%;
+			text-align: right;
+			text-transform: lowercase;
 		}
 
 		aside ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
-		}
-
-		aside h2 {
-			font-size: 1rem;
-			margin: 2em 0 0.5em;
-			text-transform: uppercase;
-		}
-
-		aside h2:nth-of-type(1) {
-			margin-top: 0;
-		}
-
-		aside section {
-			clear: both;
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		aside section:nth-of-type(1) {
-			margin-right: 3rem;
 		}
 
 		figure {
@@ -99,12 +76,36 @@
 		a {
 			border-bottom: 1px solid gold;
 			color: hsl(210, 50%, 50%);
+			background-color: hsl(210, 50%, 98%);
 			text-decoration: none;
 		}
 
 		aside section a {
+			background-color: hsl(0 0% 98%);
+			border-bottom-color: inherit;
+			color: grey;
 			display: inline-block;
 			margin: 0.5em 0;
+		}
+
+		aside section li:nth-child(1) a {
+			background-color: hsl(349deg 78% 99%);
+			color: hsl(349deg 78% 44%);
+		}
+
+		aside section li:nth-child(2) a {
+			background-color: hsl(210, 50%, 98%);
+			color: hsl(210, 50%, 50%);
+		}
+
+		aside section li:nth-child(3) a {
+			background-color: hsl(240deg 23% 98%);
+			color: hsl(240deg 23% 9%);
+		}
+
+		aside section li:nth-child(4) a {
+			background-color: hsl(31deg 48% 99%);
+			color: hsl(31deg 48% 40%);
 		}
 
 		@media(max-width: 640px) {
@@ -116,6 +117,12 @@
 
 			aside {
 				margin-left: 0;
+				text-align: center;
+			}
+
+			aside li {
+				display: inline-block;
+				margin-right: 1rem;
 			}
 		}
 		</style>
@@ -125,30 +132,17 @@
 
 		<main>
 
-			<p>Hi! I’m a programmer living on the sunny/rainy island of Singapore. I work at
-			<a href="https://www.thoughtworks.com/">ThoughtWorks</a> and also
-			co-organise the local
-			<a href="https://www.meetup.com/Grumpy-Gits-SG/">Git</a> and
-			<a href="https://www.meetup.com/Hack-Tell-Singapore/">Hack && Tell</a>
-			meetups.</p>
+			<p>Hi! I'm Sahil. I currently live in Hamburg and work at
+			<a href="https://www.thoughtworks.com/">ThoughtWorks</a> as a
+			software developer and consultant.</p>
 
-			<p>Besides my longstanding interest in technology, I find
-			linguistics, typography, and people highly interesting. I often
-			think about the intersection between psychology, philosophy and
-			computing, and about how programming and education can be
-			enriched.</p>
+			<p>I'm interested in technology, linguistics, design, and people. I
+			love mountains, books, cameras, music, and table tennis.</p>
 
-			<p>I’ve lived in a few different places: I grew up in Delhi and
-			moved to Singapore in 2010. While in university, I stayed in Norway
-			for a semester — a place I still haven't gotten over.</p>
+			<p>If you'd like to know know more, <a href="//blog.sahil.me">visit
+			my blog</a> or <a href="mailto:hello@sahil.me">get in touch via
+			email</a>!</p>
 
-			<p>A short list of some of my favourites includes J R R Tolkien,
-			The Matrix, and Iron Maiden. I love languages, mountains, books,
-			cameras, and table tennis.</p>
-
-			<p>I find “about me”s incredibly challenging to write, so if you
-			want to know more, visit <a href="//blog.sahil.me">my blog</a> or
-			<a href="mailto:hello@sahil.me">drop me an email</a>!</p>
 		</main>
 
 		<aside>
@@ -159,13 +153,18 @@
 			</figure>
 
 			<section>
-				<h2>Elsewhere</h2>
 				<ul>
 					<li>
 						<a href="//blog.sahil.me">Blog</a>
 					</li>
 					<li>
-						<a href="//photos.sahil.me">Photography</a>
+						<a href="//photos.sahil.me">Photos</a>
+					</li>
+					<li>
+						<a href="//code.sahil.me">Code</a>
+					</li>
+					<li>
+						<a href="//resume.sahil.me">Resume</a>
 					</li>
 					<li>
 						<a href="https://instagram.com/spinningarrow_">Instagram</a>
@@ -176,27 +175,6 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2>Information</h2>
-				<ul>
-					<li>
-						<a href="mailto:hello@sahil.me">Email</a>
-					</li>
-				</ul>
-			</section>
 		</aside>
-
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-1834887-3']);
-			_gaq.push(['_setDomainName', 'sahil.me']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
 	</body>
 </html>
