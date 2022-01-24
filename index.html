@@ -4,25 +4,55 @@
 
 	<style>
 * {
-	font-size: 14px;
+	font-size: 20px;
 }
 
 body {
-	display: grid;
-	font-family: monospace;
-	align-content: center;
-	margin: 2rem;
-	place-items: center;
+	font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 480px;
+}
+
+header {
+	margin: 2rem 0;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	margin-bottom: 0;
 }
 
 p {
-	text-align: center;
+	margin-bottom: 2rem;
+}
+
+img {
+	border-radius: 50%;
+	display: block;
+	filter: grayscale(0.8) contrast(4);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: inline;
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
 		background: hsl(0, 0%, 5%);
 		color: hsl(0, 0%, 90%);
+	}
+
+	h2 {
+		color: hsl(20, 16%, 66%);
 	}
 
 	a:link {
@@ -36,18 +66,24 @@ p {
 	</style>
 </head>
 
-<h1><a href="//sahil.me">sahil.me</a></h1>
+<header>
+	<h1>Sahil Bajaj</h1>
+	<a href="//sahil.me">
+		<img src="photo.jpg" alt="Profile picture">
+	</a>
+</header>
 
-<img src="photo.jpg" alt="Profile picture">
+<p>Hi, I'm <a class="h-card">Sahil.</a>
+Welcome to my tiny home on the world wide web.</p>
 
-<p>Hi, I'm <a class="h-card">Sahil.</a></p>
+<h2>Location</h2>
+<p>Oslo, Norway</p>
 
-<p>Welcome to my tiny home on the world wide web.</p>
+<h2>Contact</h2>
+<p>hello[at]sahil[dot]email</p>
 
 <h2>Elsewhere</h2>
-
 <ul>
 	<li><a href="https://github.com/spinningarrow" rel="me">GitHub</a></li>
 	<li><a href="https://www.linkedin.com/in/sahilbajaj-42" rel="me">LinkedIn</a></li>
-	<li><a href="https://instagram.com/spinningarrow_" rel="me">Instagram</a></li>
 </ul>
